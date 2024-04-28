@@ -23,11 +23,11 @@ void main() {
 
   // Define a seed to use for the transformation. This can be any string.
   // It uses SHA256. Different seeds will produce different transformations.
-  final password = 'Password 123';
+  const PASSWORD = 'Password 123';
 
   // Create a mapper using the defined character list and seed.
   final mapper = BijectiveUuidMapper(
-    seed: password,
+    seed: PASSWORD,
     charList: hexCharList,
   );
 
