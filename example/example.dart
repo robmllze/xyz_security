@@ -40,9 +40,9 @@ void main() {
   print('Original UUID: $uuid');
   final mappedUuid = mapper.map(uuid);
   print('Mapped UUID: $mappedUuid');
-  final reverseMappedUuid = mapper.reverseMap(mappedUuid);
-  print('Reverse Mapped ID: $reverseMappedUuid');
+  final unmappedUuid = mapper.unmap(mappedUuid);
+  print('Unmapped ID: $unmappedUuid');
 
   // Check if the reverse mapped ID is indded the same as the original ID.
-  print(reverseMappedUuid == uuid ? 'Success!' : 'Failure!');
+  print(unmappedUuid == uuid ? 'Success!' : 'Failure!');
 }
