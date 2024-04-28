@@ -35,14 +35,14 @@ void main() {
   );
 
   // Generate a UUID using the 'uuid' package.
-  final id = 'f47ac10b-58cc-4372-a567-0e02b2c3d479';
+  final uuid = 'f47ac10b-58cc-4372-a567-0e02b2c3d479';
 
-  print('Original ID: $id');
-  final mappedId = mapper.mapId(id);
-  print('Mapped ID: $mappedId');
-  final reverseMappedId = mapper.reverseMapId(mappedId);
-  print('Reverse Mapped ID: $reverseMappedId');
+  print('Original UUID: $uuid');
+  final mappedUuid = mapper.map(uuid);
+  print('Mapped UUID: $mappedUuid');
+  final reverseMappedUuid = mapper.reverseMap(mappedUuid);
+  print('Reverse Mapped ID: $reverseMappedUuid');
 
   // Check if the reverse mapped ID is indded the same as the original ID.
-  print(reverseMappedId == id ? 'Success!' : 'Failure!');
+  print(reverseMappedUuid == uuid ? 'Success!' : 'Failure!');
 }

@@ -42,7 +42,7 @@ class BijectiveUuidMapper {
   //
   //
 
-  String mapId(String id) {
+  String map(String id) {
     return utils.bijectiveStringTransformationV1(
       source: id,
       digest: this.digest,
@@ -54,7 +54,7 @@ class BijectiveUuidMapper {
   //
   //
 
-  String reverseMapId(String id) {
+  String reverseMap(String id) {
     return utils.reverseBijectiveStringTransformationV1(
       source: id,
       digest: digest,
