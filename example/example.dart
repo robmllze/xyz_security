@@ -14,6 +14,9 @@ import 'package:xyz_security/xyz_security.dart';
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
+// In this example, we map a UUID to another UUID and back using a password.
+// This allows us to create UUIDs that are linked in some way and can be used
+// to identify the same entity across different systems.
 void main() {
   // Define a list of characters to use for the transformation. Here we use the
   // hexadecimal character list since the input UUID is in hexadecimal format.
