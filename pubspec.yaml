@@ -11,7 +11,7 @@
 name: xyz_security
 description: This package provides a set of security tools for Dart applications.
 repository: https://github.com/robmllze/xyz_security
-version: 0.1.1
+version: 0.1.2
 
 ## -----------------------------------------------------------------------------
 
